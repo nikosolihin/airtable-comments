@@ -1,0 +1,125 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.form {
+  width: 70%;
+  background: #f3f5f9;
+  border: 1px solid #e5e8ed;
+  border-radius: .5rem;
+  box-shadow: 0 10px 20px rgba(3, 27, 78, .1);
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 3rem;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  &__success {
+    color: #20ef20;
+    font-weight: bold;
+    margin-top: 2rem;
+    display: none;
+    text-align: center;
+
+    &--show {
+      display: block;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    padding: .75rem;
+    border-radius: .5rem;
+    background: #999;
+    color: white;
+    font-weight: bold;
+    transition: all .2s ease;
+
+    &--loading {
+      color: #555;
+      background: #ddd;
+
+      svg {
+        display: inline;
+      }
+    }
+  }
+}
+
+$offset: 187;
+$duration: 1.4s;
+
+.spinner {
+  animation: rotator $duration linear infinite;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  display: none;
+}
+
+@keyframes rotator {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(270deg);
+  }
+}
+
+.path {
+  stroke-dasharray: $offset;
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  animation:
+    dash $duration ease-in-out infinite,
+    colors ($duration*4) ease-in-out infinite;
+}
+
+@keyframes colors {
+  0% {
+    stroke: #4285F4;
+  }
+
+  25% {
+    stroke: #DE3E35;
+  }
+
+  50% {
+    stroke: #F7C223;
+  }
+
+  75% {
+    stroke: #1B9A59;
+  }
+
+  100% {
+    stroke: #4285F4;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: $offset;
+  }
+
+  50% {
+    stroke-dashoffset: $offset/4;
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: $offset;
+    transform: rotate(450deg);
+  }
+}
