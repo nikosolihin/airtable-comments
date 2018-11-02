@@ -1,0 +1,29 @@
+.alert {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+  svg {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &--success {
+    display: flex;
+    color: $green;
+
+    .alert__failed {
+      display: none;
+    }
+  }
+
+  &--failed {
+    display: flex;
+    color: $red;
+
+    .alert__success {
+      display: none;
+    }
+  }
+}

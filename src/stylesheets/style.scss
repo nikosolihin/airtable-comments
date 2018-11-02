@@ -20,6 +20,7 @@
  * For raw HTML elements. Bare tag styles, not classes or 
  * IDs.
  */
+@import "base/elements";
 @import "base/typography";
 
 /**
@@ -33,6 +34,10 @@
  * UI Components styling.
  */
 @import "components/form";
+@import "components/button";
+@import "components/overlay";
+@import "components/spinner";
+@import "components/alert";
 
 /**
  * TRUMPS

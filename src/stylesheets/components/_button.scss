@@ -1,0 +1,27 @@
+.button {
+  color: $white;
+  background-color: $blue;
+  border: 0;
+  border-radius: 6px;
+  padding: .75rem 1.5rem;
+  transition: background-color .17s ease;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: darken($blue, 3%);
+  }
+
+  &--cancel {
+    color: $gray-600;
+    background-color: $white;
+    border: 1px solid $gray-400;
+
+    &:hover {
+      background-color: $white;
+    }
+  }
+}

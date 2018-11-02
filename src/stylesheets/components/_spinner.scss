@@ -1,0 +1,37 @@
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $gray-600;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1rem);
+  transition: all .2s ease-out;
+
+  &__path {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 7px solid $gray-400;
+    border-bottom: 7px solid transparent;
+    margin-bottom: 1rem;
+    animation: spin 1s infinite linear;
+    transform: translate3d(0);
+  }
+
+  &--open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -17,9 +17,10 @@ $body: $gray-900 !default;
 $line: $gray-200 !default;
 
 // Others
-$red: #b3282d !default;
-$blue: #009cff !default;
+$red: #ba5363 !default;
+$blue: #3871f0 !default;
 $orange: #fb1 !default;
+$green: #5fb8ac !default;
 
 /******************************
  * Spacing
@@ -58,35 +59,33 @@ $list-padding-left: $single !default;
 /******************************
  * Typography
  ******************************/
-$font-size-root: 18px !default;
+$font-size-root: 16px !default;
 $font-size-mini: 16px !default;
 $font-size: 1rem !default;
 
 // Weights
 $font-weight-light: 300 !default;
-$font-weight-normal: 300 !default;
+$font-weight-normal: 600 !default;
 $font-weight-medium: 600 !default;
-$font-weight-bold: 700 !default;
+$font-weight-bold: 800 !default;
 
 // Sizes
 $font-size-h1: 2.074rem !default;
-$font-size-h2: 1.728rem !default;
+$font-size-h2: 1.428rem !default;
 $font-size-h3: 1.44rem !default;
-$font-size-large: 1.2rem !default;
+$font-size-large: 1.3rem !default;
 $font-size-regular: 1rem !default;
 $font-size-small: .833rem !default;
 $font-size-micro: .694rem !default;
 
 // Line Heights
 $line-height: 1.45 !default;
-$headings-line-height: 1.25 !default;
+$headings-line-height: 1 !default;
 
 // Sans Serif
-$font-family: "Source Sans Pro",
+$font-family: Nunito,
 Helvetica,
 Arial,
-"Liberation Sans",
-FreeSans,
 sans-serif;
 
 /******************************
