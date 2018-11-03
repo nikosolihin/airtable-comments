@@ -52,12 +52,14 @@
           Comment
           <textarea name="comment" class="comment" rows="4" placeholder="Enter some comment" required></textarea>
         </label>
-        <label class="checkbox">
+        <label class="checkbox checkbox--active">
           <input type="checkbox" name="notify">
-          <svg aria-hidden="true" role="presentation">
-            <use xlink:href="#icon-check" />
-          </svg>
-          <span>Notify me when my feedback is received</span>
+          <div class="checkbox__icon">
+            <svg aria-hidden="true" role="presentation">
+              <use xlink:href="#icon-checkmark" />
+            </svg>
+          </div>
+          <span class="faint">Notify me when my feedback is received.</span>
         </label>
         <p class="form__blurb faint center">
           This form uses <a href="https://airtable.com">Airtable</a> as a data storage. Refer to their <a href="https://airtable.com">API
