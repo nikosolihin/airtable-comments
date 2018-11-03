@@ -1,0 +1,34 @@
+.pill {
+  display: flex;
+  flex-direction: row;
+  margin: 0 .5rem 0 0;
+
+  span {
+    cursor: pointer;
+    background-color: #fff;
+    padding: .55rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid #e1e5fa;
+    transition: all .2s ease;
+    margin-bottom: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    margin-bottom: 1.75rem;
+  }
+
+  &:hover span {
+    background-color: lighten(#e1e5fa, 3%);
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked~span {
+      background-color: #e1e5fa;
+    }
+  }
+}

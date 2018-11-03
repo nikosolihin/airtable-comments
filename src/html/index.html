@@ -52,6 +52,23 @@
           Comment
           <textarea name="comment" class="comment" rows="4" placeholder="Enter some comment" required></textarea>
         </label>
+
+        <p>Priority</p>
+        <div class="pill__wrapper">
+          <label class="pill">
+            <input type="checkbox" value="Critical">
+            <span class="spaced caps h6 bold">Critical</span>
+          </label>
+          <label class="pill">
+            <input type="checkbox" value="Medium">
+            <span class="spaced caps h6 bold">Medium</span>
+          </label>
+          <label class="pill">
+            <input type="checkbox" value="Low">
+            <span class="spaced caps h6 bold">Low</span>
+          </label>
+        </div>
+
         <p class="form__blurb faint center">
           This form uses <a href="https://airtable.com">Airtable</a> as a data storage. Refer to their <a href="https://airtable.com">API
             docs</a> for details. We'll be adding more features to the form in future lessons.
