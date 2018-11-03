@@ -1,16 +1,15 @@
 .pill {
   display: flex;
   flex-direction: row;
-  margin: 0 .5rem 0 0;
+  margin: 0 .75rem 0 0;
 
   span {
     cursor: pointer;
-    background-color: #fff;
-    padding: .55rem 1rem;
+    padding: .5rem .6rem;
     border-radius: 2rem;
-    border: 1px solid #e1e5fa;
-    transition: all .2s ease;
     margin-bottom: 0;
+    background-color: lighten(#e1e5fa, 4%);
+    transition: all .25s ease-in-out;
   }
 
   &__wrapper {
@@ -19,7 +18,7 @@
   }
 
   &:hover span {
-    background-color: lighten(#e1e5fa, 3%);
+    background-color: #e1e5fa;
   }
 
   input {
@@ -28,7 +27,8 @@
     cursor: pointer;
 
     &:checked~span {
-      background-color: #e1e5fa;
+      color: $white;
+      background-color: $blue;
     }
   }
 }
