@@ -32,4 +32,8 @@
       background-color: $blue;
     }
   }
+
+  &--red input:checked~span {
+    background-color: #d03c52;
+  }
 }
