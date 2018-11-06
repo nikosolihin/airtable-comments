@@ -1,9 +1,14 @@
 .upload {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   color: $blue;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background-color: #f2f4fc;
+  border-radius: .35rem;
 
   input {
     position: absolute;
